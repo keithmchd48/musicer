@@ -21,13 +21,13 @@
     :class="{ active: isMusicPlayerActive }"
   >
     <img
-      src="./assets/covers/back.png"
+      :src="backIconUrl"
       class="back-btn cursor-pointer icon hide"
       alt="back button"
       @click.stop="toggleMusicPlayer(false)"
     />
     <img
-      src="./assets/covers/nav.png"
+      :src="navIconUrl"
       class="nav-btn cursor-pointer icon hide"
       alt=""
       @click="togglePlaylist(true)"
@@ -97,7 +97,7 @@
   <!--Playlist section-->
   <section class="playlist" :class="{ active: isPlaylistActive }">
     <img
-      src="./assets/covers/back.png"
+      :src="backIconUrl"
       class="back-btn icon cursor-pointer"
       @click="togglePlaylist(false)"
       alt=""
@@ -164,6 +164,12 @@ export default {
     this.seekBarProgression()
   },
   computed: {
+    backIconUrl() {
+      return new URL(`src/assets/covers/back.png`, window.location.href).href
+    },
+    navIconUrl() {
+      return new URL(`src/assets/covers/nav.png`, window.location.href).href
+    },
     currentMusicSource() {
       return this.allSongs[this.currentMusic].path
     },

@@ -1,90 +1,92 @@
+let coverPath = 'src/assets/covers'
+
 export const songs = [
   {
     id: 0,
     name: 'A window to the past',
-    path: './assets/songs/Song1.mp3',
+    path: './data/songs/Song1.mp3',
     artist: 'John Williams',
-    cover: './assets/covers/cover1.jpeg',
+    cover: new URL(`${coverPath}/cover1.jpeg`, window.location.href).href,
     alt: 'Cover 1'
   },
   {
     id: 1,
     name: 'Come on Eileen',
-    path: './assets/songs/Song2.mp3',
+    path: './data/songs/Song2.mp3',
     artist: 'Dexys midnight runners',
-    cover: './assets/covers/cover2.jpg',
+    cover: new URL(`${coverPath}/cover2.jpg`, window.location.href).href,
     alt: 'Cover 2'
   },
   {
     id: 2,
     name: 'Como los olivos',
-    path: './assets/songs/Song3.mp3',
+    path: './data/songs/Song3.mp3',
     artist: 'Bebe',
-    cover: './assets/covers/cover3.jpg',
+    cover: new URL(`${coverPath}/cover3.jpg`, window.location.href).href,
     alt: 'Cover 3'
   },
   {
     id: 3,
     name: 'Heroes',
-    path: './assets/songs/Song4.mp3',
+    path: './data/songs/Song4.mp3',
     artist: 'David Bowie',
-    cover: './assets/covers/cover4.png',
+    cover: new URL(`${coverPath}/cover4.png`, window.location.href).href,
     alt: 'Cover 4'
   },
   {
     id: 4,
     name: 'Nobody but me',
-    path: './assets/songs/Song5.mp3',
+    path: './data/songs/Song5.mp3',
     artist: 'The Human Beinz',
-    cover: './assets/covers/cover5.jpeg',
+    cover: new URL(`${coverPath}/cover5.jpeg`, window.location.href).href,
     alt: 'Cover 5'
   },
   {
     id: 5,
     name: 'O Children',
-    path: './assets/songs/Song6.mp3',
+    path: './data/songs/Song6.mp3',
     artist: 'Nick Cave & the bad seeds',
-    cover: './assets/covers/cover6.jpeg',
+    cover: new URL(`${coverPath}/cover6.jpeg`, window.location.href).href,
     alt: 'Cover 6'
   },
   {
     id: 6,
     name: 'Siempre me quedara',
-    path: './assets/songs/Song7.mp3',
+    path: './data/songs/Song7.mp3',
     artist: 'Bebe',
-    cover: './assets/covers/cover7.jpeg',
+    cover: new URL(`${coverPath}/cover7.jpeg`, window.location.href).href,
     alt: 'Cover 7'
   },
   {
     id: 7,
     name: 'The other side',
-    path: './assets/songs/Song8.mp3',
+    path: './data/songs/Song8.mp3',
     artist: 'Hugh Jackman & Zac Efron',
-    cover: './assets/covers/cover8.jpeg',
+    cover: new URL(`${coverPath}/cover8.jpeg`, window.location.href).href,
     alt: 'Cover 8'
   },
   {
     id: 8,
     name: 'Femme like you',
-    path: './assets/songs/Song9.mp3',
+    path: './data/songs/Song9.mp3',
     artist: 'Monaldin feat. emma peters',
-    cover: './assets/covers/cover9.jpeg',
+    cover: new URL(`${coverPath}/cover9.jpeg`, window.location.href).href,
     alt: 'Cover 9'
   },
   {
     id: 9,
     name: 'Honeypie',
-    path: './assets/songs/Song10.mp3',
+    path: './data/songs/Song10.mp3',
     artist: 'JAWNY',
-    cover: './assets/covers/cover10.jpeg',
+    cover: new URL(`${coverPath}/cover10.jpeg`, window.location.href).href,
     alt: 'Cover 10'
   },
   {
     id: 10,
     name: 'Rolling in the deep',
-    path: './assets/songs/Song11.mp3',
+    path: './data/songs/Song11.mp3',
     artist: 'Adele',
-    cover: './assets/covers/cover11.png',
+    cover: new URL(`${coverPath}/cover11.png`, window.location.href).href,
     alt: 'Cover 11'
   }
 ]
