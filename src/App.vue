@@ -110,7 +110,7 @@
 </template>
 
 <script>
-import { songs } from '@/data/songs'
+import { songs, COVER_PATH } from '@/data/songs'
 import Carousel from '@/components/Carousel.vue'
 import RecentlyPlayed from '@/components/RecentlyPlayed.vue'
 import Seekbar from '@/components/Seekbar.vue'
@@ -165,10 +165,10 @@ export default {
   },
   computed: {
     backIconUrl() {
-      return new URL(`src/assets/covers/back.png`, window.location.href).href
+      return new URL(`${COVER_PATH}/back.png`, window.location.href).href
     },
     navIconUrl() {
-      return new URL(`src/assets/covers/nav.png`, window.location.href).href
+      return new URL(`${COVER_PATH}/nav.png`, window.location.href).href
     },
     currentMusicSource() {
       return this.allSongs[this.currentMusic].path
